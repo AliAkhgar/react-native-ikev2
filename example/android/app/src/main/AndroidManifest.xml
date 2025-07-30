@@ -1,0 +1,69 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+  <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+
+    <application
+      android:name=".MainApplication"
+      android:label="@string/app_name"
+      android:icon="@mipmap/ic_launcher"
+      android:roundIcon="@mipmap/ic_launcher_round"
+      android:allowBackup="false"
+      android:theme="@style/AppTheme"
+      android:supportsRtl="true">
+      <activity
+        android:name=".MainActivity"
+        android:label="@string/app_name"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+        android:launchMode="singleTask"
+        android:windowSoftInputMode="adjustResize"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+      </activity>
+
+      <!---->
+
+      <service
+        android:name="org.strongswan.android.logic.VpnStateService"
+        android:exported="false">
+      </service>
+      <service
+        android:name="org.strongswan.android.logic.CharonVpnService"
+        android:exported="false"
+        android:foregroundServiceType="specialUse"
+        android:permission="android.permission.BIND_VPN_SERVICE">
+        <intent-filter>
+          <action android:name="android.net.VpnService" />
+        </intent-filter>
+        <property
+          android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+          android:value="VpnService instance"/>
+      </service>
+
+      <activity
+        android:name="org.strongswan.android.ui.VpnProfileControlActivity"
+        android:theme="@style/TransparentActivity"
+        android:taskAffinity=""
+        android:excludeFromRecents="true"
+        android:launchMode="singleTask"
+        android:exported="true">
+        <intent-filter>
+          <action android:name="org.strongswan.android.action.START_PROFILE" />
+          <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        <intent-filter>
+          <action android:name="org.strongswan.android.action.DISCONNECT" />
+          <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+      </activity>
+
+
+    </application>
+</manifest>
