@@ -1,7 +1,7 @@
 {
   "name": "react-native-ikev2",
   "version": "0.1.0",
-  "description": "React Native",
+  "description": "Secure IKEv2 VPN implementation for React Native with comprehensive configuration options",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
   "exports": {
@@ -42,15 +42,21 @@
   },
   "keywords": [
     "react-native",
+    "ikev2",
+    "vpn",
+    "security",
+    "networking",
     "ios",
-    "android"
+    "android",
+    "turbomodule",
+    "encryption"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AliAkhgar/react-native-ikev2.git"
   },
   "author": "Ali Akhgar <theakhgar@gmail.com> (https://github.com/AliAkhgar)",
-  "license": "MIT",
+  "license": "PROPRIETARY",
   "bugs": {
     "url": "https://github.com/AliAkhgar/react-native-ikev2/issues"
   },
