@@ -1,6 +1,6 @@
 {
   "name": "@aliakhgar1/react-native-ikev2",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "An advanced React Native TurboModule for IKEv2",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
