@@ -34,9 +34,9 @@ export default function App() {
   const [isPrepared, setIsPrepared] = React.useState(false);
   const [vpnState, setVPNState] = React.useState<IKev2.ConnectionState>();
 
-  const [username, setUsername] = React.useState('godping_158031');
-  const [password, setPassword] = React.useState('3076ffad8d2');
-  const [address, setAddress] = React.useState('p87074c.godping.ir');
+  const [username, setUsername] = React.useState('godping__');
+  const [password, setPassword] = React.useState('_');
+  const [address, setAddress] = React.useState('p87074c.google.ir');
 
   React.useEffect(() => {
     PermissionsAndroid.request('android.permission.POST_NOTIFICATIONS');
@@ -99,7 +99,7 @@ export default function App() {
       password: password,
       address: address,
       androidOptions: {
-        connectionName: 'سلام',
+        connectionName: 'Hey!',
         MTU: 1480,
         AuthType: IKev2.AndroidAuthType.IKEv2_EAP,
         checkCerificateWithOCSP: false,
@@ -113,10 +113,10 @@ export default function App() {
 
         Notification: {
           openActivityPackageName: 'ikev2.example.MainActivity',
-          titleConnecting: 'دارم وصل میشم...',
-          titleConnected: 'من وصلممممم',
+          titleConnecting: 'Connecting...',
+          titleConnected: 'Connected!!',
           showDisconnectAction: true,
-          titleDisconnectButton: 'قطع پینگ',
+          titleDisconnectButton: 'Disconnect me',
           showTimer: true,
         },
       },
