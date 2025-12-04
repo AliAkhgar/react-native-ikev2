@@ -1,7 +1,6 @@
 <p align="center">
   <img width="1244" height="294" alt="Generated Image December 04, 2025 - 3_20PM" src="https://github.com/user-attachments/assets/df49b2fb-232e-4afd-a919-3b8f2dffc61e" />
 
-
 </p>
 
 <p align="center">
@@ -23,7 +22,7 @@
 🔔 **Customizable notifications** with actions and timers  
 🔄 **Event-driven** connection state management  
 📝 **Fully typed** APIs with IntelliSense support  
-🌐 **Advanced routing** and custom DNS features  
+🌐 **Advanced routing** and custom DNS features
 
 ## 🧭 Fast Navigation
 
@@ -90,13 +89,13 @@ const connectToVPN = async () => {
     address: 'your-vpn-server.com',
     username: 'your-username',
     password: 'your-password',
-    
+
     iOSOptions: {
       localizedDescription: 'My IKEv2 Connection',
       disconnectOnSleep: false,
       onDemandEnabled: false,
     },
-    
+
     androidOptions: {
       connectionName: 'My IKEv2 VPN',
       AuthType: IKEv2.AndroidAuthType.IKEv2_EAP,
@@ -133,7 +132,6 @@ subscription.remove();
 ## Contributing
 
 See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
-
 
 ---
 

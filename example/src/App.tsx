@@ -1,3 +1,7 @@
+/**
+ * Not yet compatible with React-Native-Control-Tower.
+ */
+
 import React from 'react';
 import {
   Text,
