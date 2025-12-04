@@ -83,6 +83,7 @@
     "react-native": "0.79.2",
     "react-native-builder-bob": "^0.40.8",
     "release-it": "^17.10.0",
+    "semantic-release": "^24.2.9",
     "turbo": "^1.10.7",
     "typescript": "^5.8.3"
   },
@@ -162,8 +163,5 @@
     "languages": "kotlin-objc",
     "type": "turbo-module",
     "version": "0.52.0"
-  },
-  "dependencies": {
-    "semantic-release": "^24.2.9"
   }
 }
