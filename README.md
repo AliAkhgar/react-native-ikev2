@@ -1,13 +1,18 @@
 <p align="center">
-  <!-- Banner image placeholder -->
-  <img src="https://via.placeholder.com/800x200/1a365d/ffffff?text=React+Native+IKEv2" alt="React Native IKEv2 Banner" style="width:100%;">
+  <img width="1244" height="294" alt="Generated Image December 04, 2025 - 3_20PM" src="https://github.com/user-attachments/assets/df49b2fb-232e-4afd-a919-3b8f2dffc61e" />
+
+
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/React%20Native-Turbo%20Module-61DAFB?style=flat-square&logo=react&logoColor=white" alt="React Native Turbo Module" />
-  <img src="https://img.shields.io/badge/IKEv2-Protocol-blue?style=flat-square&logo=openvpn" alt="IKEv2 Protocol" />
-  <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square&logo=opensourceinitiative&logoColor=white" alt="MIT License" />
+  <img src="https://img.shields.io/badge/IKEv2-Protocol-blue?style=flat-square&logo=strongswan&logoColor=red" alt="IKEv2 Protocol" />
+  <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square&logo=strongswan&logoColor=red" alt="MIT License" />
 </p>
+
+<div valign="top" align="right">
+  <img align="right" padding="200" width="50%" height="600" style="margin:200px;" src="https://github.com/user-attachments/assets/8803e977-283f-4c8b-baa3-3175fbee3532">
+</div>
 
 <h3>Features</h3>
 
@@ -129,9 +134,6 @@ subscription.remove();
 
 See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
 
-## License
-
-MIT
 
 ---
 
