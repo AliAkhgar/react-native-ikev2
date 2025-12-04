@@ -1,6 +1,6 @@
 {
-  "name": "react-native-ikev2",
-  "version": "0.1.0",
+  "name": "@aliakhgar1/react-native-ikev2",
+  "version": "1.0.1",
   "description": "React Native",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
@@ -38,7 +38,8 @@
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "clean": "del-cli android/build example/android/build example/android/app/build example/ios/build lib",
     "prepare": "bob build",
-    "release": "release-it --only-version"
+    "release": "release-it --only-version",
+    "semantic-release": "semantic-release"
   },
   "keywords": [
     "react-native",
@@ -160,5 +161,8 @@
     "languages": "kotlin-objc",
     "type": "turbo-module",
     "version": "0.52.0"
+  },
+  "dependencies": {
+    "semantic-release": "^24.2.9"
   }
 }
